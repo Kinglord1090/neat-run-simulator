@@ -1,4 +1,4 @@
-# NEATRun: AI Evolution Simulator 🏃‍♂️💡
+# NEATRun: AI Evolution Simulator 🏃‍♂️🤖
 
 NEATRun is an AI-driven side-scrolling game where a neural network learns to navigate obstacles using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. The AI evolves over generations to improve its performance in avoiding obstacles and achieving higher scores.
 
@@ -15,11 +15,11 @@ NEATRun is an AI-driven side-scrolling game where a neural network learns to nav
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/neat-run.git
+    git clone https://github.com/your-repo/neat-run-simulator.git
     ```
 2. Navigate to the project folder:
     ```bash
-    cd neat-run
+    cd neat-run-simulator
     ```
 3. Install dependencies:
     ```bash
