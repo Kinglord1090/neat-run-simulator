@@ -101,7 +101,7 @@ def eval_genomes(genomes, config):
 		OBSTACLE_SPAWN_TIMER += clock.get_time()
 		if OBSTACLE_SPAWN_TIMER >= random.randint(1000,5000):
 			OBSTACLE_SPAWN_TIMER = 0
-			obstacle = Obstacle(random.choices([0, 1], weights=[0.5, 0.5], k=1)[0])
+			obstacle = Obstacle(random.choices([0, 1], weights=[0.8, 0.2], k=1)[0])
 			obstacle_group.add(obstacle)
 		obstacle_group.update()
 
