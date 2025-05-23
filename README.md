@@ -15,7 +15,7 @@ NEATRun is an AI-driven side-scrolling game where a neural network learns to nav
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/neat-run-simulator.git
+    git clone https://github.com/Kinglord1090/neat-run-simulator.git
     ```
 2. Navigate to the project folder:
     ```bash
@@ -30,7 +30,7 @@ NEATRun is an AI-driven side-scrolling game where a neural network learns to nav
 
 1. Run the simulation:
     ```bash
-    python neat_run_sim.py
+    python neat-run-sim.py
     ```
 2. The AI will control the player and attempt to avoid obstacles while continuously learning.
 3. The game will display key metrics such as:
