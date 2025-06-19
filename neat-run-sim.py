@@ -123,7 +123,9 @@ def eval_genomes(genomes, config):
 			)
 
 			output = nets[i].activate(inputs)
-			action = numpy.argmax(output)
+			# action = numpy.argmax(output)
+			probs = softmax(output)
+			action = numpy.random.choice(len(probs), p=probs)
 
 			if action == 0:
 				player.jump()
@@ -133,6 +135,12 @@ def eval_genomes(genomes, config):
 				player.stop_duck()
 
 			ge[i].fitness += 0.1
+
+			if player.ducking and nearest_obstacle and obstacle_y < 360:
+			    ge[i].fitness += 0.3
+			
+			if player.altitude < 0 and nearest_obstacle and obstacle_y >= 360:
+			    ge[i].fitness += 0.3
 
 		for i in reversed(range(len(players))):
 			if pygame.sprite.spritecollideany(players[i], obstacle_group):
